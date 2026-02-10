@@ -1,21 +1,26 @@
 /* ===== Base ===== */
 * { box-sizing: border-box; }
 
+html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
-html { scroll-behavior: smooth; }
 
+/* Global link reset (buttons will override this) */
+a { text-decoration: none; color: inherit; }
+
+/* Anchor target helper (place <span id="features" class="scroll-target"></span>) */
 .scroll-target {
   display: block;
   height: 1px;
   margin-top: -30px; /* pulls target up slightly */
+  visibility: hidden;
 }
 
-a { text-decoration: none; color: inherit; }
-
+/* Real <button> elements (if you use them later) */
 button {
   font: inherit;
   padding: 12px 16px;
@@ -23,7 +28,9 @@ button {
   cursor: pointer;
 }
 
-a.button {
+/* Anchor-as-button styling (THIS is what your CTAs should use) */
+a.button,
+a.button:visited {
   display: inline-block;
   padding: 12px 16px;
   background: #111;
@@ -32,10 +39,12 @@ a.button {
   font-weight: 600;
 }
 
-a.button:hover {
-  opacity: 0.9;
+a.button:hover { opacity: 0.9; }
+a.button:active { transform: translateY(1px); }
+a.button:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 3px;
 }
-
 
 /* ===== Layout ===== */
 header, main, footer {
@@ -45,7 +54,7 @@ header, main, footer {
 }
 
 /* ===== Header ===== */
-header {
+header.top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,40 +62,22 @@ header {
   border-bottom: 1px solid #e6e6e6;
 }
 
-header h1 { font-size: 18px; margin: 0; }
-
-nav { display: flex; gap: 16px; }
-nav a { font-size: 14px; opacity: 0.85; }
-nav a:hover { opacity: 1; }
-
-.demo-note {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.top {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.top h1 {
-  font-size: 1.25rem;
+header.top h1 {
+  font-size: 18px;
   margin: 0;
 }
 
-.top nav a {
-  margin-left: 20px;
-  text-decoration: none;
+header.top nav {
+  display: flex;
+  gap: 16px;
 }
 
+header.top nav a {
+  font-size: 14px;
+  opacity: 0.85;
+}
 
+header.top nav a:hover { opacity: 1; }
 
 /* ===== Hero ===== */
 main > section:first-of-type { padding: 40px 0; }
@@ -100,12 +91,6 @@ main > section:first-of-type p {
   max-width: 60ch;
   margin: 0 0 18px;
   opacity: 0.85;
-}
-
-main > section:first-of-type button {
-  background: #111;
-  color: #fff;
-  border-radius: 8px;
 }
 
 /* ===== Features ===== */
@@ -126,51 +111,32 @@ main > section:first-of-type button {
 .feature h3 { margin: 0 0 6px; font-size: 16px; }
 .feature p { margin: 0; opacity: 0.85; }
 
-
-
 /* ===== CTA ===== */
 .cta {
-    margin: 10px 0 40px;
-    padding: 24px;
-    border: 1px solid #e6e6e6;
-    border-radius: 12px;
-  }
-  
-  .cta h2 {
-    margin: 0 0 8px;
-    font-size: 22px;
-  }
-  
-  .cta p {
-    margin: 0 0 14px;
-    opacity: 0.85;
-  }
-  
-  .cta button {
-    background: #111;
-    color: #fff;
-    border-radius: 8px;
-  }
-
-.cta-link {
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  margin: 10px 0 40px;
+  padding: 24px;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
 }
 
-.cta-link:hover {
-  text-decoration-thickness: 2px;
+.cta h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
 }
 
+.cta p {
+  margin: 0 0 14px;
+  opacity: 0.85;
+}
 
-  .note {
-    max-width: 1100px;
-    margin: 0 auto 20px;
-    padding: 0 20px;
-    font-size: 13px;
-    opacity: 0.75;
-  }
-  
+/* Note under the demo */
+.note {
+  max-width: 1100px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  font-size: 13px;
+  opacity: 0.75;
+}
 
 /* ===== Footer ===== */
 footer {
@@ -181,22 +147,12 @@ footer {
 
 /* ===== Responsive ===== */
 @media (max-width: 800px) {
-  header {
+  header.top {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .features {
-    grid-template-columns: 1fr;
-  }
+  .features { grid-template-columns: 1fr; }
 
-  main > section:first-of-type h2 {
-    font-size: 28px;
-  }
+  main > section:first-of-type h2 { font-size: 28px; }
 }
-
-
-
-
-
-
