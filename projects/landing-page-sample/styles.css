@@ -16,7 +16,7 @@ a { text-decoration: none; color: inherit; }
 .scroll-target {
   display: block;
   height: 1px;
-  margin-top: -60px; /* pulls target up slightly */
+  margin-top: -30px; /* pulls target up slightly */
   visibility: hidden;
 }
 
@@ -156,4 +156,5 @@ footer {
 
   main > section:first-of-type h2 { font-size: 28px; }
 }
+
 
