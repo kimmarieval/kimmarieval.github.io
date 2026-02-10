@@ -91,6 +91,15 @@ main > section:first-of-type p {
 .feature h3 { margin: 0 0 6px; font-size: 16px; }
 .feature p { margin: 0; opacity: 0.85; }
 
+.features-section {
+  padding: 40px 0 0;
+}
+
+.features-section h2 {
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+
 /* ===== CTA ===== */
 .cta {
   margin: 10px 0 40px;
@@ -136,6 +145,7 @@ footer {
 
   main > section:first-of-type h2 { font-size: 28px; }
 }
+
 
 
 
