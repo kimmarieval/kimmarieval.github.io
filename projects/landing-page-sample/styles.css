@@ -1,34 +1,14 @@
 /* ===== Base ===== */
 * { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 
-/* Global link reset (buttons will override this) */
 a { text-decoration: none; color: inherit; }
 
-/* Anchor target helper (place <span id="features" class="scroll-target"></span>) */
-.scroll-target {
-  display: block;
-  height: 1px;
-  margin-top: -30px; /* pulls target up slightly */
-  visibility: hidden;
-}
-
-/* Real <button> elements (if you use them later) */
-button {
-  font: inherit;
-  padding: 12px 16px;
-  border: 0;
-  cursor: pointer;
-}
-
-/* Anchor-as-button styling (THIS is what your CTAs should use) */
 a.button,
 a.button:visited {
   display: inline-block;
@@ -156,5 +136,6 @@ footer {
 
   main > section:first-of-type h2 { font-size: 28px; }
 }
+
 
 
