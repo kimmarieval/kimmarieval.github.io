@@ -60,16 +60,16 @@ header.top nav a {
 header.top nav a:hover { opacity: 1; }
 
 /* ===== Hero ===== */
-main > section:first-of-type { padding: 40px 0; }
+.hero { padding: 40px 0 24px; }
 
-main > section:first-of-type h2 {
+.hero h2 {
   font-size: 36px;
   margin: 0 0 10px;
 }
 
-main > section:first-of-type p {
+.hero p {
   max-width: 60ch;
-  margin: 0 0 18px;
+  margin: 0;
   opacity: 0.85;
 }
 
@@ -78,9 +78,11 @@ main > section:first-of-type p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  padding: 30px 0 40px;
+  padding: 0 0 40px;        
+  margin-top: 12px;
   border-top: 1px solid #e6e6e6;
 }
+
 
 .feature {
   border: 1px solid #e6e6e6;
@@ -92,7 +94,7 @@ main > section:first-of-type p {
 .feature p { margin: 0; opacity: 0.85; }
 
 .features-section {
-  padding: 40px 0 0;
+  padding: 16px 0 0;
 }
 
 .features-section h2 {
@@ -145,6 +147,7 @@ footer {
 
   main > section:first-of-type h2 { font-size: 28px; }
 }
+
 
 
 
