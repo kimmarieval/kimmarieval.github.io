@@ -7,6 +7,11 @@ body {
   line-height: 1.5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 a { text-decoration: none; color: inherit; }
 
 button {
@@ -163,5 +168,6 @@ footer {
     font-size: 28px;
   }
 }
+
 
 
