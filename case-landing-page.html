@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Case Study | Landing Page Sample</title>
+    <title>Case Study | Marketing Campaign Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header class="top">
       <h1><a href="index.html">Kim Valish</a></h1>
+
       <nav>
         <a href="projects.html">Projects</a>
         <a href="resume/Kim_Valish_Frontend_Developer.pdf" target="_blank">Resume</a>
@@ -17,51 +19,167 @@
     </header>
 
     <main class="wrap">
-      <h2>Marketing Landing Page (Production-Focused)</h2>
-      <p>
-        Clean, accessible implementation prioritizing maintainability over visual flair.
-      </p>
-
-      <div class="card">
-        <h3>Tech stack</h3>
-        <p>HTML5, CSS (Flexbox/Grid), Responsive layout, basic accessibility structure</p>
-      </div>
-
-      <div class="card">
-        <h3>What I built</h3>
-        <ul>
-          <li>Header with navigation</li>
-          <li>Hero section with call-to-action</li>
-          <li>Feature cards using CSS Grid</li>
-          <li>CTA section and footer</li>
-        </ul>
-      </div>
-
-     <div class="card">
-        <h3>Frontend decisions</h3>
-        <ul>
-          <li>Prioritized semantic HTML structure to support accessibility, clarity, and long-term maintainability.</li>
-          <li>Used CSS Grid for the feature layout to create a flexible structure that adapts cleanly across breakpoints.</li>
-          <li>Designed the layout mobile-first, ensuring readable content and predictable stacking on smaller screens.</li>
-          <li>Kept styling intentionally minimal to reflect production environments where clarity and performance matter.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>What I’d do next</h3>
-        <ul>
-          <li>Add lightweight JavaScript interactions to demonstrate state and dynamic UI behavior.</li>
-          <li>Refactor repeated layout patterns into reusable components for easier scaling.</li>
-          <li>Rebuild the layout using React to demonstrate component-based architecture and a modern workflow.</li>
-        </ul>
-      </div>
-      
-      <div class="card">
-        <h3>Demo</h3>
+      <section class="case-hero">
+        <p class="eyebrow">Case Study</p>
+        <h2>Marketing Campaign Landing Page</h2>
         <p>
-          <a class="btn" href="projects/landing-page-sample/index.html">View live demo</a>
+          A responsive front-end build designed to demonstrate how a campaign landing page can be structured
+          for clarity, usability, reusable sections, and mobile-first execution.
         </p>
-      </div>
+
+        <div class="button-row">
+          <a class="btn" href="projects/landing-page-sample/index.html">View live demo</a>
+          <a class="btn btn-secondary" href="projects.html">Back to projects</a>
+        </div>
+      </section>
+
+      <section class="case-meta" aria-label="Project details">
+        <div>
+          <h3>Role</h3>
+          <p>Front-End Development, Responsive Layout, Design-to-Code Implementation</p>
+        </div>
+
+        <div>
+          <h3>Tools</h3>
+          <p>HTML5, CSS, Flexbox, CSS Grid, GitHub Pages</p>
+        </div>
+
+        <div>
+          <h3>Focus</h3>
+          <p>Marketing page structure, CTA flow, maintainable CSS, accessibility basics</p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2>Building a clean, campaign-ready page structure.</h2>
+        </div>
+
+        <div class="card case-card">
+          <p>
+            This project was created as a front-end portfolio piece to show practical marketing page execution:
+            a clear hero section, benefit-driven content, reusable feature cards, CTA placement, and responsive
+            behavior across screen sizes.
+          </p>
+
+          <p>
+            The goal was not to overcomplicate the build. The focus was on clean structure, readable content,
+            maintainable styling, and a layout that could realistically support a marketing campaign or product offer.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="section-heading">
+          <p class="eyebrow">Challenge</p>
+          <h2>Marketing pages need to be clear, flexible, and easy to update.</h2>
+        </div>
+
+        <div class="card case-card">
+          <p>
+            Campaign pages often need to be launched quickly, updated frequently, and adjusted for different offers.
+            The challenge was to create a simple but polished page structure that could support common marketing needs
+            without becoming difficult to maintain.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="section-heading">
+          <p class="eyebrow">Solution</p>
+          <h2>A modular landing page with reusable front-end patterns.</h2>
+        </div>
+
+        <div class="card case-card">
+          <ul>
+            <li>Structured the page with semantic HTML for clear hierarchy and accessibility support.</li>
+            <li>Used responsive layout patterns so the page stacks predictably on smaller screens.</li>
+            <li>Created reusable sections for the hero, feature cards, CTA area, and footer.</li>
+            <li>Kept styling organized and readable so future sections could be added or adjusted easily.</li>
+            <li>Used clear CTA placement to support a straightforward user path through the page.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="section-heading">
+          <p class="eyebrow">What I Built</p>
+          <h2>Core page sections and implementation details.</h2>
+        </div>
+
+        <div class="case-grid">
+          <article class="highlight-card">
+            <h3>Hero Section</h3>
+            <p>
+              A clear introductory section with a focused headline, supporting copy, and primary call-to-action.
+            </p>
+          </article>
+
+          <article class="highlight-card">
+            <h3>Feature Grid</h3>
+            <p>
+              A responsive card layout using modern CSS patterns to keep content organized and easy to scan.
+            </p>
+          </article>
+
+          <article class="highlight-card">
+            <h3>CTA Section</h3>
+            <p>
+              A closing conversion section that reinforces the page goal and directs users to the next action.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="section-heading">
+          <p class="eyebrow">Front-End Decisions</p>
+          <h2>Practical choices for maintainability and responsive behavior.</h2>
+        </div>
+
+        <div class="card case-card">
+          <ul>
+            <li>
+              Prioritized semantic HTML structure to support accessibility, readability, and long-term maintenance.
+            </li>
+            <li>
+              Used CSS Grid and flexible layout patterns for sections that need to adapt across breakpoints.
+            </li>
+            <li>
+              Built the layout mobile-first so content remains readable and predictable on smaller screens.
+            </li>
+            <li>
+              Kept the code lightweight and focused, avoiding unnecessary dependencies for a simple marketing page.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="section-heading">
+          <p class="eyebrow">Next Steps</p>
+          <h2>How this project could scale in a real production workflow.</h2>
+        </div>
+
+        <div class="card case-card">
+          <ul>
+            <li>Add lightweight JavaScript interactions such as FAQ toggles, form validation, or sticky CTA behavior.</li>
+            <li>Refactor repeated sections into reusable components for faster campaign page builds.</li>
+            <li>Create additional layout variations for different campaign types, offers, or audience segments.</li>
+            <li>Rebuild the structure in React to demonstrate component-based architecture and TypeScript props.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cta">
+        <p class="eyebrow">Live Demo</p>
+        <h2>View the finished landing page.</h2>
+        <p>
+          The live demo shows the responsive page structure, feature layout, CTA section, and front-end implementation.
+        </p>
+        <a class="button" href="projects/landing-page-sample/index.html">View live demo</a>
+      </section>
     </main>
 
     <footer class="wrap foot">
@@ -69,6 +187,3 @@
     </footer>
   </body>
 </html>
-
-
-
