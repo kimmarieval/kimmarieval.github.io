@@ -208,6 +208,62 @@
           </p>
         </div>
       </section>
+      
+      <section class="component-demo">
+        <div class="component-label">
+          <p class="eyebrow">Code Examples</p>
+          <h2>Snippet-style component structure</h2>
+          <p>
+            These examples show how reusable marketing sections could be structured as CMS snippets,
+            template partials, or component patterns with editable content fields.
+          </p>
+        </div>
+      
+        <div class="code-grid">
+          <article class="code-card">
+            <h3>Hero Snippet</h3>
+            <pre><code>&lt;section class="snippet-hero"&gt;
+        &lt;p class="eyebrow"&gt;{{ eyebrow }}&lt;/p&gt;
+        &lt;h1&gt;{{ headline }}&lt;/h1&gt;
+        &lt;p&gt;{{ supporting_copy }}&lt;/p&gt;
+      
+        &lt;a class="btn" href="{{ cta_url }}"&gt;
+          {{ cta_text }}
+        &lt;/a&gt;
+      &lt;/section&gt;</code></pre>
+          </article>
+      
+          <article class="code-card">
+            <h3>Split Content Snippet</h3>
+            <pre><code>&lt;section class="snippet-split"&gt;
+        &lt;div class="snippet-media"&gt;
+          &lt;img src="{{ image_url }}" alt="{{ image_alt }}"&gt;
+        &lt;/div&gt;
+      
+        &lt;div class="snippet-content"&gt;
+          &lt;p class="eyebrow"&gt;{{ eyebrow }}&lt;/p&gt;
+          &lt;h2&gt;{{ heading }}&lt;/h2&gt;
+          &lt;p&gt;{{ body_copy }}&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;</code></pre>
+          </article>
+      
+          <article class="code-card">
+            <h3>CTA Banner Snippet</h3>
+            <pre><code>&lt;section class="snippet-cta"&gt;
+        &lt;div&gt;
+          &lt;p class="eyebrow"&gt;{{ eyebrow }}&lt;/p&gt;
+          &lt;h2&gt;{{ heading }}&lt;/h2&gt;
+          &lt;p&gt;{{ body_copy }}&lt;/p&gt;
+        &lt;/div&gt;
+      
+        &lt;a class="btn" href="{{ cta_url }}"&gt;
+          {{ cta_text }}
+        &lt;/a&gt;
+      &lt;/section&gt;</code></pre>
+          </article>
+        </div>
+      </section>
 
       <section class="library-cta">
         <p class="eyebrow">Case Study</p>

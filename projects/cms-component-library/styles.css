@@ -328,3 +328,36 @@ footer {
     min-height: 340px;
   }
 }
+
+.code-grid {
+    display: grid;
+    gap: 18px;
+  }
+  
+  .code-card {
+    background: #17130f;
+    color: #f8f3ea;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  
+  .code-card h3 {
+    margin: 0;
+    padding: 18px 22px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  
+  .code-card pre {
+    margin: 0;
+    padding: 22px;
+    overflow-x: auto;
+  }
+  
+  .code-card code {
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre;
+  }
